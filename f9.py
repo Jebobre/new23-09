@@ -10,7 +10,8 @@ def task_8_2():
         if not wall_is_above():
             fill_cell()
         move_right()
-    fill_cell()
+    if not wall_is_above():
+        fill_cell()
 
 
 if __name__ == '__main__':
