@@ -10,7 +10,8 @@ def task_8_3():
         if (wall_is_above() or wall_is_beneath()):
             fill_cell()
         move_right()
-    fill_cell()
+    if wall_is_beneath() or wall_is_above():
+        fill_cell()
 
 if __name__ == '__main__':
     run_tasks()
